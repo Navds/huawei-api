@@ -1,0 +1,16 @@
+config/deviceinformation/config.xml
+config/dialup/config.xml
+config/dialup/connectmode.xml
+config/firewall/config.xml
+config/global/config.xml
+config/global/languagelist.xml
+config/global/net-type.xml
+config/network/net-mode.xml
+config/network/networkband_
+config/network/networkmode.xml
+config/pcassistant/config.xml
+config/pincode/config.xml
+config/sms/config.xml
+config/update/config.xml
+config/wifi/configure.xml
+config/wifi/countryChannel.xml
