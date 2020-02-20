@@ -1,0 +1,230 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2020-02-20T12:50:00.157Z",
+	"__export_source": "insomnia.desktop.app:v6.3.2",
+	"resources": [
+		{
+			"_id": "wrk_2c4c4bdfbbc54d25b361be3c51a2b99b",
+			"created": 1582200269227,
+			"description": "",
+			"modified": 1582200269227,
+			"name": "huawei_api",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_afaa7f2a83a84cba97c009fa4998e9e6",
+			"color": null,
+			"created": 1582200269607,
+			"data": {
+				"host": "192.168.1.1"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1582200269607,
+			"modified": 1582200291042,
+			"name": "New Environment",
+			"parentId": "wrk_2c4c4bdfbbc54d25b361be3c51a2b99b",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_b4ae2e1ddb00413794946d99ac97e3fa",
+			"cookies": [],
+			"created": 1582200269647,
+			"modified": 1582200269647,
+			"name": "Default Jar",
+			"parentId": "wrk_2c4c4bdfbbc54d25b361be3c51a2b99b",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_e82e2097089b42c79561815304325342",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/xml",
+				"text": "<?xml version=\"\"1.0\"\" encoding=\"\"UTF-8\"\"?>\n<request>\n\t<Username>admin</Username>\n\t<Password>base64(password)</Password>\n</request>"
+			},
+			"created": 1582200304389,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_1eae126caecc4200a687b621257b83a8",
+					"name": "Content-Type",
+					"value": "application/xml"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1582200304390,
+			"method": "POST",
+			"modified": 1582202953356,
+			"name": "Login",
+			"parameters": [],
+			"parentId": "wrk_2c4c4bdfbbc54d25b361be3c51a2b99b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ host  }}/api/user/login",
+			"_type": "request"
+		},
+		{
+			"_id": "req_9380b403093046be81d9be631930aa95",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/xml",
+				"text": "<?xml version=\"\"1.0\"\" encoding=\"\"UTF-8\"\"?>\n<request>\n\t<Logout>1</Logout>\n</request>"
+			},
+			"created": 1582200424131,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_1eae126caecc4200a687b621257b83a8",
+					"name": "Content-Type",
+					"value": "application/xml"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1568867681094,
+			"method": "POST",
+			"modified": 1582200444577,
+			"name": "Logout",
+			"parameters": [],
+			"parentId": "wrk_2c4c4bdfbbc54d25b361be3c51a2b99b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ host  }}/api/user/login",
+			"_type": "request"
+		},
+		{
+			"_id": "req_714c7f4434174913ad372e1001e6c9af",
+			"authentication": {},
+			"body": {},
+			"created": 1582200478340,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1568867681044,
+			"method": "GET",
+			"modified": 1582200555235,
+			"name": "Statistics",
+			"parameters": [],
+			"parentId": "wrk_2c4c4bdfbbc54d25b361be3c51a2b99b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ host  }}/api/monitoring/month_statistics",
+			"_type": "request"
+		},
+		{
+			"_id": "req_98238ba7b3804ed4936254e96dda32a4",
+			"authentication": {},
+			"body": {},
+			"created": 1582200583940,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_3927fa7e86d54a23b0ba5dbd75bd922a",
+					"name": "Accept",
+					"value": "text/xml"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1562201369421,
+			"method": "GET",
+			"modified": 1582200911140,
+			"name": "Battery level",
+			"parameters": [],
+			"parentId": "wrk_2c4c4bdfbbc54d25b361be3c51a2b99b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ host  }}/api/monitoring/status",
+			"_type": "request"
+		},
+		{
+			"_id": "req_b8af57da7ab642d99526d80a382222cc",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/xml",
+				"text": "<?xml version=\"1.0\" encoding=UTF-8?>\n<request>\n\t<PageIndex>1</PageIndex>\n\t<ReadCount>2</ReadCount>\n\t<BoxType>1</BoxType>\n\t<SortType>0</SortType>\n\t<Ascending>0</Ascending>\n\t<UnreadPreferred>0</UnreadPreferred>\n</request>"
+			},
+			"created": 1582201105638,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_3927fa7e86d54a23b0ba5dbd75bd922a",
+					"name": "Accept",
+					"value": "text/xml"
+				},
+				{
+					"id": "pair_695e74c2385041a085c61c6875b5c7f8",
+					"name": "Content-Type",
+					"value": "application/xml"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1558868213609.5,
+			"method": "POST",
+			"modified": 1582202557649,
+			"name": "Sms List",
+			"parameters": [],
+			"parentId": "wrk_2c4c4bdfbbc54d25b361be3c51a2b99b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ host  }}/api/sms/sms-list",
+			"_type": "request"
+		},
+		{
+			"_id": "req_bfbce50073c2481396cec51e937e32c8",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/xml",
+				"text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<request>\n\t<PageIndex>1</PageIndex>\n\t<ReadCount>20</ReadCount>\n\t<BoxType>1</BoxType>\n\t<SortType>0</SortType>\n\t<Ascending>0</Ascending>\n\t<UnreadPreferred>0</UnreadPreferred>\n</request>"
+			},
+			"created": 1582202464786,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_3927fa7e86d54a23b0ba5dbd75bd922a",
+					"name": "Accept",
+					"value": "text/xml"
+				},
+				{
+					"id": "pair_695e74c2385041a085c61c6875b5c7f8",
+					"name": "Content-Type",
+					"value": "application/xml"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1557201635703.75,
+			"method": "POST",
+			"modified": 1582202472607,
+			"name": "Sms List (Copy)",
+			"parameters": [],
+			"parentId": "wrk_2c4c4bdfbbc54d25b361be3c51a2b99b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ host  }}/api/sms/sms-list",
+			"_type": "request"
+		}
+	]
+}
